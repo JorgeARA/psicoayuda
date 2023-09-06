@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat de Ayuda Psicológica</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-dialog" id="loginDialog">
+            <h2 class="login-title">Chatea con el Psicólogo</h2>
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <input type="text" id="document" placeholder="Número de Documento">
+            </div>
+            <button id="loginButton">Ingresar</button>
+            <button id="cancelButton">Cancelar</button>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h2>Chat con el Psicólogo</h2>
+                <span id="user"></span>
+                <span id="psychologist">Psicóloga: Camila molina </span>
+                <button id="logoutButton" class="red-button">Cerrar Sesión</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Aquí se mostrarán los mensajes -->
+            </div>
+            <div class="message-input">
+                <input type="text" id="message" placeholder="Escribe un mensaje...">
+                <button id="sendMessage" class="green-button">Enviar Mensaje</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

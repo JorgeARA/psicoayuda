@@ -1,0 +1,145 @@
+/* Colores de la paleta */
+:root {
+    --primary-color: #128C7E; /* Color principal similar al de WhatsApp */
+    --secondary-color: #25D366; /* Color secundario similar al de WhatsApp */
+    --text-color: #333; /* Color del texto principal */
+    --background-color: #f5b7b1; /* Color de fondo del formulario de inicio de sesión */
+    --chat-background-color: #fff; /* Color de fondo del chat similar a WhatsApp */
+    --chat-text-color: #000; /* Color del texto del chat */
+    --red-button-color: #E74C3C; /* Color del botón rojo */
+    --green-button-color: #2ECC71; /* Color del botón verde */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); /* Fondo de la página */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-dialog {
+    background-color: rebeccapurple; /* Color de fondo del formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-title {
+    color: black; /* Color del título */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-dialog button {
+    background-color: var(--secondary-color); /* Color del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.login-dialog button:hover {
+    background-color: #075E54; /* Color de botón al pasar el ratón similar a WhatsApp */
+}
+
+.chat-window {
+    display: none;
+    flex-direction: column;
+    background-color: var(--chat-background-color); /* Color de fondo del chat similar a WhatsApp */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.chat-header {
+    background-color: var(--primary-color); /* Color de fondo del encabezado del chat similar a WhatsApp */
+    color: #fff; /* Color del texto del encabezado del chat */
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h2 {
+    font-size: 24px;
+}
+
+.chat-header span {
+    color: #eee;
+    margin-left: 10px;
+}
+
+.chat-messages {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.red-button {
+    background-color: var(--red-button-color); /* Color del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.green-button{
+    background-color: var(--secondary-color); /* Color del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
